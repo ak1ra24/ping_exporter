@@ -1,0 +1,15 @@
+targets:
+  - hosts:
+      - ip: 10.0.0.111
+        name: "a"
+        broadcast: false
+        description: "hoge"
+      - ip: 10.0.0.255
+        name: "b"
+        broadcast: true
+        description: "fuga"
+    interval: 1s
+    timeout: 1s
+    network: ip
+    protocol: icmp
+    size: 28 # packet range (28~)
